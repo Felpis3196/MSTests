@@ -108,5 +108,108 @@ namespace CustoFuncionarioApp.Models.Tests
 
             Assert.AreEqual(Esperado, obtido, 2);
         }
+
+        [TestMethod()]
+        [DataRow(1412.00, 112.96, 2.14)] // FGTS como exemplo de despesa
+        [DataRow(2666.68, 213.33, 2.12)] 
+        [DataRow(4000.03, 320.00, 2.08)] 
+        [DataRow(7786.02, 622.88, 2.02)] 
+        [DataRow(10000.00, 800.00, 2.11)] 
+        public void getPercentualDespesaTest(double salario, double valorDespesa, double esperado)
+        {
+            custo.SalarioBruto = (decimal)salario;
+            custo.PlanoSaude = 200;
+            custo.SeguroVida = 100;
+            custo.OutrosBeneficios = 50;
+
+            var obtido = custo.getPercentualDespesa((decimal)valorDespesa);
+            var Esperado = (decimal)esperado;
+
+            Assert.AreEqual(Esperado, obtido, 2);
+        }
+
+
+        [TestMethod()]
+        [DataRow(1412.00, 5275.53)]
+        [DataRow(2666.68, 9692.27)]
+        [DataRow(4000.03, 14483.44)]
+        [DataRow(7786.02, 28016.32)]
+        [DataRow(10000.00, 34483.33)]
+        public void getCustoTotalTest(double salario, double esperado)
+        {
+            custo.SalarioBruto = (decimal)salario;
+            // Definindo valores fixos para outros benefícios, plano de saúde e seguro de vida
+            custo.PlanoSaude = 200;
+            custo.SeguroVida = 100;
+            custo.OutrosBeneficios = 50;
+
+            var obtido = custo.getCustoTotal();
+            var Esperado = (decimal)esperado;
+
+            Assert.AreEqual(Esperado, obtido, 2);
+        }
+
+        [TestMethod()]
+        [DataRow(-1.00)]  // Salário negativo
+        [DataRow(-100.00)] // Salário negativo
+        public void getINSS_AliquotaTest_Exception(double salario)
+        {
+            custo.SalarioBruto = (decimal)salario;
+            Assert.ThrowsException<ArgumentOutOfRangeException>(() => custo.getINSS_Aliquota());
+        }
+
+        [TestMethod()]
+        [DataRow(-1.00)]  // Salário negativo
+        public void getINSS_ValorTest_Exception(double salario)
+        {
+            custo.SalarioBruto = (decimal)salario;
+            Assert.ThrowsException<ArgumentOutOfRangeException>(() => custo.getINSS_Valor());
+        }
+
+        [TestMethod()]
+        [DataRow(-1.00)]  // Salário negativo
+        public void getFGTSTest_Exception(double salario)
+        {
+            custo.SalarioBruto = (decimal)salario;
+            Assert.ThrowsException<ArgumentOutOfRangeException>(() => custo.getFGTS());
+        }
+
+        [TestMethod()]
+        [DataRow(-1.00)]  // Salário negativo
+        public void get13oSalarioTest_Exception(double salario)
+        {
+            custo.SalarioBruto = (decimal)salario;
+            Assert.ThrowsException<ArgumentOutOfRangeException>(() => custo.get13oSalario());
+        }
+
+        [TestMethod()]
+        [DataRow(-1.00)]  // Salário negativo
+        public void getFeriasTest_Exception(double salario)
+        {
+            custo.SalarioBruto = (decimal)salario;
+            Assert.ThrowsException<ArgumentOutOfRangeException>(() => custo.getFerias());
+        }
+
+        [TestMethod()]
+        [DataRow(-1.00)]  // Despesa negativa
+        [DataRow(0.00)]   // Custo total zero
+        public void getPercentualDespesaTest_Exception(double valorDespesa)
+        {
+            custo.SalarioBruto = 0;  // Forçando o custo total a ser zero
+            Assert.ThrowsException<ArgumentOutOfRangeException>(() => custo.getPercentualDespesa((decimal)valorDespesa));
+        }
+
+        [TestMethod()]
+        [DataRow(-100.00)]  // Salário negativo
+        [DataRow(0.00)]     // Salário zero
+        public void getCustoTotalTest_Exception(double salario)
+        {
+            custo.SalarioBruto = (decimal)salario;
+            custo.PlanoSaude = 200;
+            custo.SeguroVida = 100;
+            custo.OutrosBeneficios = 50;
+
+            Assert.ThrowsException<ArgumentOutOfRangeException>(() => custo.getCustoTotal());
+        }
     }
 }

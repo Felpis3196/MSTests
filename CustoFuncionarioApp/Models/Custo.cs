@@ -7,55 +7,66 @@
         public decimal SeguroVida { get; set; }
         public decimal OutrosBeneficios { get; set; }
 
-        /*
-            Calculado com base no salário:
-            Até R$ 1.412,00	---> 7,5%
-            De R$ 1.412,01 até R$ 2.666,68	---> 9%
-            De R$ 2.666,69 até R$ 4.000,03	---> 12%
-            De R$ 4.000,04 até R$ 7.786,02	---> 14%
-            Acima disso, desconto fixo de R$ 908,85 ---> 0%
-         */
-
         public decimal getINSS_Aliquota()
         {
+            if (SalarioBruto < 0.01M)
+                throw new ArgumentOutOfRangeException("Salário não pode ser negativo.");
+
             if (SalarioBruto <= 1412.00M) return 7.5M;
             if (SalarioBruto >= 1412.01M && SalarioBruto <= 2666.68M) return 9M;
             if (SalarioBruto >= 2666.69M && SalarioBruto <= 4000.03M) return 12M;
             if (SalarioBruto >= 4000.04M && SalarioBruto <= 7786.02M) return 14M;
-                return 0M;
+            return 0M;
         }
 
         public decimal getINSS_Valor()
         {
-            return this.SalarioBruto * this.getINSS_Aliquota()/100;
+            if (SalarioBruto < 0)
+                throw new ArgumentOutOfRangeException("Salário não pode ser negativo.");
+
+            return this.SalarioBruto * this.getINSS_Aliquota() / 100;
         }
 
-        // Calculado como sendo 8% sobre o salário
         public decimal getFGTS()
         {
+            if (SalarioBruto < 0)
+                throw new ArgumentOutOfRangeException("Salário não pode ser negativo.");
+
             return this.SalarioBruto * 0.08M;
         }
 
         public decimal get13oSalario()
         {
+            if (SalarioBruto < 0)
+                throw new ArgumentOutOfRangeException("Salário não pode ser negativo.");
+
             return this.SalarioBruto;
         }
 
-        // Salário base + 1/3
         public decimal getFerias()
         {
+            if (SalarioBruto < 0)
+                throw new ArgumentOutOfRangeException("Salário não pode ser negativo.");
+
             return this.SalarioBruto + this.SalarioBruto / 3;
         }
 
-        // Calcula o percentual que um custo representa em relação ao custo total
-        // Exemplo: De todos os custos, qtos % são referentes a FGTS?
         public decimal getPercentualDespesa(decimal valorDespesa)
         {
+            if (valorDespesa < 0)
+                throw new ArgumentOutOfRangeException("Valor da despesa não pode ser negativo.");
+
+            if (this.getCustoTotal() == 0)
+                throw new ArgumentOutOfRangeException("Custo total não pode ser zero.");
+
             return (valorDespesa / this.getCustoTotal()) * 100;
         }
 
         public decimal getCustoTotal()
         {
+            if (SalarioBruto < 0.01M || PlanoSaude < 0 || SeguroVida < 0 || OutrosBeneficios < 0)
+                throw new ArgumentOutOfRangeException("Nenhum dos valores pode ser negativo.");
+
             return this.SalarioBruto +
                    this.getINSS_Valor() +
                    this.getFGTS() +
@@ -66,4 +77,5 @@
                    this.OutrosBeneficios;
         }
     }
+
 }

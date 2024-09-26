@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CustoFuncionarioAppTests1
-build_property.ProjectDir = C:\Users\SENAI3EM\Desktop\TSOF-A02-Projeto-CustoFuncionarioApp\CustoFuncionarioAppTests1\
+build_property.ProjectDir = C:\Users\fegri\Desktop\MSTests\CustoFuncionarioAppTests1\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

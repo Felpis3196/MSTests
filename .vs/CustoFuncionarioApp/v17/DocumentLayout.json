@@ -1,14 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\SENAI3EM\\Desktop\\TSOF-A02-Projeto-CustoFuncionarioApp\\",
+  "WorkspaceRootPath": "C:\\Users\\fegri\\Desktop\\MSTests\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F386AA1-29CD-4420-BA27-929D1E6341DB}|CustoFuncionarioApp\\CustoFuncionarioApp.csproj|c:\\users\\senai3em\\desktop\\tsof-a02-projeto-custofuncionarioapp\\custofuncionarioapp\\models\\custo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F386AA1-29CD-4420-BA27-929D1E6341DB}|CustoFuncionarioApp\\CustoFuncionarioApp.csproj|solutionrelative:custofuncionarioapp\\models\\custo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2175FB3-E9DD-44DA-80FD-3A93CA27EC71}|CustoFuncionarioAppTests1\\CustoFuncionarioAppTests1.csproj|c:\\users\\fegri\\desktop\\mstests\\custofuncionarioapptests1\\models\\custotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2175FB3-E9DD-44DA-80FD-3A93CA27EC71}|CustoFuncionarioAppTests1\\CustoFuncionarioAppTests1.csproj|solutionrelative:custofuncionarioapptests1\\models\\custotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2175FB3-E9DD-44DA-80FD-3A93CA27EC71}|CustoFuncionarioAppTests1\\CustoFuncionarioAppTests1.csproj|c:\\users\\senai3em\\desktop\\tsof-a02-projeto-custofuncionarioapp\\custofuncionarioapptests1\\models\\custotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2175FB3-E9DD-44DA-80FD-3A93CA27EC71}|CustoFuncionarioAppTests1\\CustoFuncionarioAppTests1.csproj|solutionrelative:custofuncionarioapptests1\\models\\custotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F386AA1-29CD-4420-BA27-929D1E6341DB}|CustoFuncionarioApp\\CustoFuncionarioApp.csproj|c:\\users\\fegri\\desktop\\mstests\\custofuncionarioapp\\controllers\\calculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F386AA1-29CD-4420-BA27-929D1E6341DB}|CustoFuncionarioApp\\CustoFuncionarioApp.csproj|solutionrelative:custofuncionarioapp\\controllers\\calculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F386AA1-29CD-4420-BA27-929D1E6341DB}|CustoFuncionarioApp\\CustoFuncionarioApp.csproj|c:\\users\\fegri\\desktop\\mstests\\custofuncionarioapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F386AA1-29CD-4420-BA27-929D1E6341DB}|CustoFuncionarioApp\\CustoFuncionarioApp.csproj|solutionrelative:custofuncionarioapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F386AA1-29CD-4420-BA27-929D1E6341DB}|CustoFuncionarioApp\\CustoFuncionarioApp.csproj|c:\\users\\fegri\\desktop\\mstests\\custofuncionarioapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F386AA1-29CD-4420-BA27-929D1E6341DB}|CustoFuncionarioApp\\CustoFuncionarioApp.csproj|solutionrelative:custofuncionarioapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F386AA1-29CD-4420-BA27-929D1E6341DB}|CustoFuncionarioApp\\CustoFuncionarioApp.csproj|c:\\users\\fegri\\desktop\\mstests\\custofuncionarioapp\\models\\custo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F386AA1-29CD-4420-BA27-929D1E6341DB}|CustoFuncionarioApp\\CustoFuncionarioApp.csproj|solutionrelative:custofuncionarioapp\\models\\custo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,45 +30,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Custo.cs",
-              "DocumentMoniker": "C:\\Users\\SENAI3EM\\Desktop\\TSOF-A02-Projeto-CustoFuncionarioApp\\CustoFuncionarioApp\\Models\\Custo.cs",
-              "RelativeDocumentMoniker": "CustoFuncionarioApp\\Models\\Custo.cs",
-              "ToolTip": "C:\\Users\\SENAI3EM\\Desktop\\TSOF-A02-Projeto-CustoFuncionarioApp\\CustoFuncionarioApp\\Models\\Custo.cs",
-              "RelativeToolTip": "CustoFuncionarioApp\\Models\\Custo.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAIwCwAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T18:23:33.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CustoTests.cs",
-              "DocumentMoniker": "C:\\Users\\SENAI3EM\\Desktop\\TSOF-A02-Projeto-CustoFuncionarioApp\\CustoFuncionarioAppTests1\\Models\\CustoTests.cs",
-              "RelativeDocumentMoniker": "CustoFuncionarioAppTests1\\Models\\CustoTests.cs",
-              "ToolTip": "C:\\Users\\SENAI3EM\\Desktop\\TSOF-A02-Projeto-CustoFuncionarioApp\\CustoFuncionarioAppTests1\\Models\\CustoTests.cs",
-              "RelativeToolTip": "CustoFuncionarioAppTests1\\Models\\CustoTests.cs",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAYwGsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T13:04:08.019Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\fegri\\Desktop\\MSTests\\CustoFuncionarioApp\\Program.cs",
+              "RelativeDocumentMoniker": "CustoFuncionarioApp\\Program.cs",
+              "ToolTip": "C:\\Users\\fegri\\Desktop\\MSTests\\CustoFuncionarioApp\\Program.cs",
+              "RelativeToolTip": "CustoFuncionarioApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T11:27:31.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\fegri\\Desktop\\MSTests\\CustoFuncionarioApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CustoFuncionarioApp\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\fegri\\Desktop\\MSTests\\CustoFuncionarioApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CustoFuncionarioApp\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T11:27:26.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CalculoController.cs",
+              "DocumentMoniker": "C:\\Users\\fegri\\Desktop\\MSTests\\CustoFuncionarioApp\\Controllers\\CalculoController.cs",
+              "RelativeDocumentMoniker": "CustoFuncionarioApp\\Controllers\\CalculoController.cs",
+              "ToolTip": "C:\\Users\\fegri\\Desktop\\MSTests\\CustoFuncionarioApp\\Controllers\\CalculoController.cs",
+              "RelativeToolTip": "CustoFuncionarioApp\\Controllers\\CalculoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T11:27:21.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Custo.cs",
+              "DocumentMoniker": "C:\\Users\\fegri\\Desktop\\MSTests\\CustoFuncionarioApp\\Models\\Custo.cs",
+              "RelativeDocumentMoniker": "CustoFuncionarioApp\\Models\\Custo.cs",
+              "ToolTip": "C:\\Users\\fegri\\Desktop\\MSTests\\CustoFuncionarioApp\\Models\\Custo.cs",
+              "RelativeToolTip": "CustoFuncionarioApp\\Models\\Custo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T18:23:33.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustoTests.cs",
+              "DocumentMoniker": "C:\\Users\\fegri\\Desktop\\MSTests\\CustoFuncionarioAppTests1\\Models\\CustoTests.cs",
+              "RelativeDocumentMoniker": "CustoFuncionarioAppTests1\\Models\\CustoTests.cs",
+              "ToolTip": "C:\\Users\\fegri\\Desktop\\MSTests\\CustoFuncionarioAppTests1\\Models\\CustoTests.cs",
+              "RelativeToolTip": "CustoFuncionarioAppTests1\\Models\\CustoTests.cs",
+              "ViewState": "AQIAAK8AAAAAAAAAAAAiwMIAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T13:04:08.019Z",
+              "EditorCaption": ""
             }
           ]
         }

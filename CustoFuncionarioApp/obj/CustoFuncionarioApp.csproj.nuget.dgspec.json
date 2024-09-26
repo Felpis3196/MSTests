@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SENAI3EM\\Desktop\\TSOF-A02-Projeto-CustoFuncionarioApp\\CustoFuncionarioApp\\CustoFuncionarioApp.csproj": {}
+    "C:\\Users\\fegri\\Desktop\\MSTests\\CustoFuncionarioApp\\CustoFuncionarioApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SENAI3EM\\Desktop\\TSOF-A02-Projeto-CustoFuncionarioApp\\CustoFuncionarioApp\\CustoFuncionarioApp.csproj": {
+    "C:\\Users\\fegri\\Desktop\\MSTests\\CustoFuncionarioApp\\CustoFuncionarioApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SENAI3EM\\Desktop\\TSOF-A02-Projeto-CustoFuncionarioApp\\CustoFuncionarioApp\\CustoFuncionarioApp.csproj",
+        "projectUniqueName": "C:\\Users\\fegri\\Desktop\\MSTests\\CustoFuncionarioApp\\CustoFuncionarioApp.csproj",
         "projectName": "CustoFuncionarioApp",
-        "projectPath": "C:\\Users\\SENAI3EM\\Desktop\\TSOF-A02-Projeto-CustoFuncionarioApp\\CustoFuncionarioApp\\CustoFuncionarioApp.csproj",
-        "packagesPath": "C:\\Users\\SENAI3EM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SENAI3EM\\Desktop\\TSOF-A02-Projeto-CustoFuncionarioApp\\CustoFuncionarioApp\\obj\\",
+        "projectPath": "C:\\Users\\fegri\\Desktop\\MSTests\\CustoFuncionarioApp\\CustoFuncionarioApp.csproj",
+        "packagesPath": "C:\\Users\\fegri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fegri\\Desktop\\MSTests\\CustoFuncionarioApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\SENAI3EM\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\fegri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,6 +45,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -68,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

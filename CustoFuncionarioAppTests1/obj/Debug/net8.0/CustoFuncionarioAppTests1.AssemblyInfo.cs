@@ -14,10 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CustoFuncionarioAppTests1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88bf3c1a73eaf715fa6259e92391676ed7284d90")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9be446001e110a7f99722b3ebb75c5b65fdbc764")]
 [assembly: System.Reflection.AssemblyProductAttribute("CustoFuncionarioAppTests1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CustoFuncionarioAppTests1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyMetadata("Microsoft.Testing.Platform.Application", "True")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
 
